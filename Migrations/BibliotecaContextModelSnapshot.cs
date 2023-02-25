@@ -74,7 +74,7 @@ namespace Biblioteca.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Data_Nascimento")
+                    b.Property<string>("Login")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Nome")

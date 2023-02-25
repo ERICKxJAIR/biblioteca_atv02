@@ -22,6 +22,7 @@ namespace Biblioteca.Controllers
         public IActionResult Index()
         {
             Autenticacao.CheckLogin(this);
+            
             return View();
         }
 
@@ -41,6 +42,7 @@ namespace Biblioteca.Controllers
             else
             {
                 HttpContext.Session.SetString("user", "admin");
+                HttpContext.Session.SetString("Login", Criptografia.GerarMD5("123"));
                 return RedirectToAction("Index");
             }
         }
