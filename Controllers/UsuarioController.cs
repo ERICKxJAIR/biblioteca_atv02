@@ -8,7 +8,7 @@ namespace Biblioteca.Controllers
         public IActionResult Cadastro()
         {
             
-             return View();
+            return View();
         }
     }
 }   
